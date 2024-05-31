@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# ReciGuide
 
-## Available Scripts
+ReciGuide is a full-stack application for personalized recipe suggestions. It leverages React.js for the frontend, Node.js and for the backend, Firebase for database and authentication, the Spoonacular API for recipe data, and an AI model for food recognition and nutritional data detection.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Secure user sign-up and login using Firebase Authentication.
+- **Recipe Suggestions**: Get personalized recipe suggestions based on user preferences and nutritional needs.
+- **Food Recognition**: Upload images to detect food items and get nutritional information.
+- **Spoonacular API Integration**: Fetch detailed recipe data from the Spoonacular API.
+- **Responsive Design**: Optimized for both desktop and mobile viewing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js, HTML, CSS
+- **Backend**: Node.js, Express.js
+- **Database**: Firebase Firestore
+- **Authentication**: Firebase Authentication
+- **API**: Spoonacular API
+- **AI Model**: Custom AI model for food recognition and nutritional data detection
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project locally, follow these steps:
 
-### `npm run build`
+1. **Clone the repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/your-username/reciGuide.git
+   cd reciGuide
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install frontend dependencies**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-### `npm run eject`
+3. **Install backend dependencies**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd ../backend
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Set up Firebase**:
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable Firestore and Authentication.
+   - Copy your Firebase configuration and add it to both the frontend and backend `.env` files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Set up Spoonacular API**:
+   - Sign up at [Spoonacular](https://spoonacular.com/food-api) and get an API key.
+   - Add your Spoonacular API key to the backend `.env` file:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+     ```env
+     SPOONACULAR_API_KEY=your_spoonacular_api_key
+     ```
 
-## Learn More
+6. **Run the backend**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   cd backend
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+7. **Run the frontend**:
 
-### Code Splitting
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   The application will be running at `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Sign up or Log in**: Create a new account or log in with an existing account.
+2. **Get Recipe Suggestions**: Enter your preferences and get personalized recipe suggestions.
+3. **Upload Food Images**: Upload images to detect food items and get nutritional information.
+4. **View Recipes**: Browse through detailed recipe data fetched from the Spoonacular API.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Please follow these steps to contribute:
 
-### Advanced Configuration
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any inquiries, please contact me at StellaQueen235@gmail.com.
+```
